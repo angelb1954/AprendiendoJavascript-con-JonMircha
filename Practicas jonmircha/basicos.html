@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!-- <ul>
+<li>Primavera</li>
+  <li>Verano</li>
+  <li>Otoño</li>
+  <li>Invierno</li>
+
+</ul>  -->
+
+
+
+
+<script>
+
+//////////////////////////////////////////////////////////////
+
+//  let presion = 0;
+
+//  if (presion>=3){console.log("La presion es excesiva");}
+// else if(presion <3&& presion>0){console.log("la presion esta en un tramo correcto");}
+// else if(presion==0){console.log("El servicio esta apagado");}
+// else{console.log("Una presion negativa es imposible");}
+
+////////////////////////////////////////////////////////////
+
+
+// switch(5)
+// {
+// case 0:
+// console.log("Domingo");
+// break;
+// case 1 :
+//   console.log("Lunes");
+//     break;
+// case 2 :
+//   console.log("Martes");
+//     break;
+// case 3 :
+//   console.log("Miercoles");
+//     break;
+// case 4 :
+//   console.log("Jueves");
+//     break;
+// case 5 :
+//   console.log("Viernes");
+//     break;
+// case 6 :
+//   console.log("Sabado");
+//     break;
+//   }
+
+///////////////////////////////////////////////////////////////
+
+  // switch ("Mangos") {
+  //   case 'Naranjas':
+  //     console.log('El kilogramo de naranjas cuesta $0.59.');
+  //     break;
+  //   case 'Manzanas':
+  //     console.log('El kilogramo de manzanas cuesta $0.32.');
+  //     break;
+  //   case 'Platanos':
+  //     console.log('El kilogramo de platanos cuesta $0.48.');
+  //     break;
+  //   case 'Cerezas':
+  //     console.log('El kilogramo de cerezas cuesta $3.00.');
+  //     break;
+  //   case 'Mangos':
+  //   case 'Papayas':
+  //     console.log('El kilogramo de mangos y papayas cuesta $2.79.');
+  //     break;
+  //   default:
+  //     console.log('Lo lamentamos, por el momento no disponemos de ' + expr + '.');
+  // }
+
+  // console.log("¿Hay algo más que te quisiera consultar?");
+
+// let prueba = 0;
+
+// while(prueba<1){console.log (prueba)};
+
+  ////////////////////////////////////////////////////////// 
+  // let frutas ["peras", "manzanas", "cerezas", "melones", "albaricoques", "platanos"]
+
+  //   for (i = 0; i < frutas.length; i++) {
+  //     console.log(frutas[i]);
+  //   }
+
+  //////////////////////////////////////////////////////////
+
+  // const numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+  // for (let i = 0; i < numeros.length; i++) {
+  //   if (i === 8) { break; }
+
+  //   console.log(numeros[i]);
+
+  // }
+// 
+///////////////////////////////////////////////
+
+
+  // const numeros = [1, 2, 3];
+
+  // // Sin destructuracion
+
+
+  // let uno = numeros[0],
+  // dos = numeros [1],
+  // tres = numeros [2];
+  // console.log (uno, dos, tres);
+
+  // // Con destructuracion
+
+  // const [uno, dos, tres] = numeros;
+  // console.log(uno, dos, tres);
+////////////////////////////////////////////
+
+// Con destructuracion
+
+  // const persona = {
+  //   nombre: "Angel",
+  //   apellido: "Garcia",
+  //   edad: 68
+  // }
+
+  // let {nombre, apellido, edad} = persona;
+  // console.log(nombre, apellido, edad);
+
+  ///////////////////////////////////////////////////////////
+// Parámetros REST & Operador Spread
+//REST
+
+  // function sumar (a, b, ...c){
+  //   let resultado = a+b;
+  //   c.forEach(function(n){
+  //   resultado += n
+  // });
+  // return resultado;
+  // }
+  // console.log(sumar(1,2));
+  // console.log(sumar(1,2,5,8));
+
+  //Operador Spread
+
+  // const arr1 = [0, 1, 2, 3, 4];
+  // const arr2 = [5, 6, 7, 8, 9];
+  // console.log(arr1, arr2);
+  // const arr3 = [...arr1, ...arr2];
+  // console.log(arr3)
+///////////////////////////////////////////////////////////////
+//Arrow Functions
+
+  // funciones expresadas
+  // Es cuando a una variable le asignas un funcion anónima
+
+  // const saludar = function() {
+  //   console.log("Hola");
+  // }
+  //   saludar();
+
+  // Una función flecha es simplemente quitar la palabra function 
+  // y añadir despues de los paréntesis  =>
+
+  // const saludar = ()=> {console.log("Hola");}
+  // saludar();
+  //i la funcion tiene una sola instruccion se pueden omitir las llaves
+  // const saludar = ()=> console.log("Hola");
+  // saludar();
+  // Si la funcion flecha recibe un parámetro, podemos omitir los paréntesis
+  // const saludar = (nombre) => console.log(`Hola ${nombre}`);
+  // saludar("Irma");
+
+  ////////////////////////////////////////////////////////////////////////////
+  //  const sumar = function(a,b){
+  //    return a+b
+  //  };
+  //  console.log(sumar(8,6));
+
+  //  Si lo expresamos mediente funcion flecha
+  // const sumar = (a,b) => a+b;
+  // console.log(sumar(6,7));
+
+  //////////////////////////////////////////////////////////////////////////////
+  //Funcion de varias lineas
+
+  // const funcionDeVariasLineas = () => {
+  //   console.log("Uno");
+  //   console.log("Dos");
+  //   console.log("Tres");
+
+  // };
+
+  // funcionDeVariasLineas();
+  //////////////////////////////////////////////////////////////////////////////
+
+  //Funciones flecha en una funcion forEach
+  //El método forEach recibe una funcion donde puede recibir el elemento (el) y la posición (index)
+  //y ejecutar algo
+  // const numeros = [1, 2, 3, 4, 5];
+  //Sin funcion flecha
+  // numeros.forEach(function (el, index) { console.log(`${el} está en la posicion ${index}`) });
+  // //Con funcion flecha
+  // numeros.forEach((el, index) => console.log(`${el} está en la posicion ${index}`));
+
+/////////////////////////////////////////////////////////////////////////////
+////////////////PROGRAMACION ORIENTADA A OBJETOS. Videos 22 a 25////////////
+///////////////////////////////////////////////////////////////////////////
+
+  // Clases-Modelo a seguir
+  // Objetos-Es una instancia de una clase
+  //     - Atributos. Es una caracteristica o propiedad del objeto(son variables dentro de un objeto)
+  //     - Metodos. Son las acciones que un objeto puede realizar (funciones dentro de un objeto)
+
+
+  // const animal={
+  //   nombre: "Angel",
+  //   idioma(){
+  //     "Hablo en español"
+  //   }
+  // }
+  // console.log(animal);
+
+  // const animal2={
+  //   nombre: "Lola Bunny",
+  //   idioma(){
+  //     "Hablo en español"
+  //   }
+  // }
+  // console.log(animal2);
+
+  //funcion constructora. Lo anterior, si tenemos muchos animales, sería muy laborioso, ya que nos obligaría a copiar el objeto para cada uno de ellos. Pero existe una solución, la 
+
+  ///////////////////////////////////////////////////////
+  ////////// FUNCION CONSTRUCTORA //////////////////////
+  /////////////////////////////////////////////////////
+
+
+
+  // function Animal(nombre, genero) {
+  //   //Atributos
+  //   this.nombre = nombre;
+  //   this.genero = genero;
+
+  //   //Metodos
+  //   this.sonar = function () {
+  //     console.log("Hago sonidos porque estoy vivo");
+  //   }
+  //   this.saludar = function () {
+  //     console.log(`Hola, me llamo ${this.nombre}`)
+
+  //   }
+  // }
+  //Entonces para crear un nuevo Animal
+
+  // const snoopy = new Animal("Snoopy", "Macho")
+  // const lolaBunny = new Animal("Lola Bunny", "Hembra")
+
+  // console.log(snoopy);
+  // console.log(lolaBunny);
+
+  //Pero esta forma de trabajar hace que los métodos se repitan en cada Animal, lo que es poco eficiente. Es más eficiente usar
+
+  //Metodos agregados al prototipo de la funcion constructora
+
+  // function Animal(nombre, genero) {
+  //   //Atributos
+  //   this.nombre = nombre;
+  //   this.genero = genero;
+  // }
+  //   //Los metodos se agregan a la funcion:
+
+  //   Animal.prototype.sonar = function () {
+  //     console.log("Hago sonidos porque estoy vivo");
+  //   }
+
+  //   Animal.prototype.saludar = function () {
+  //     console.log(`Hola, me llamo ${this.nombre}`);
+
+  //   }
+    // const snoopy = new Perro("Snoopy", "Macho", "Mediano");
+    // const lolaBunny = new Animal("Lola Bunny", "Hembra");
+
+    
+  //   //Herencia prototipica
+  //     function Perro(nombre, genero, tamanio) {
+  //       this.super = Animal;
+  //       this.super(nombre, genero);
+  //       this.tamanio = tamanio;
+  //     }
+  //     //Perro esta heredando de Animal
+  //     Perro.prototype = new Animal();
+  //     Perro.prototype.constructor = Perro;
+
+
+
+  //     //Sobre-escritura de metodos del prototipo padre en el hijo
+  //     Perro.prototype.sonar = function () {
+  //       console.log("soy un perro y mi sonido es un ladrido");
+
+  //     }
+    //   Perro.prototype.ladrar = function () { console.log("guau, guau"); 
+    // } 
+    
+    
+    
+    
+    
+  //   // Asi no es necesario repetirlos en cada objeto
+
+  //   console.log(snoopy);
+
+
+  //   console.log(lolaBunny);
+
+    
+  //   lolaBunny.sonar();
+  // snoopy.sonar();
+
+//////////////////////////////////////////
+//// CLASES EN JAVASCRIPT. Video 24 //////
+/////////////////////////////////////////
+
+// Las clases en Javascript están implementadas para simplificar el código de los Prototipos.
+// Veamos como una función Constructora se convierte en una clase. Esta es la Función Constructora del ejemplo de ese apartado
+
+  //function Animal(nombre, genero) {
+  //   //Atributos
+  //   this.nombre = nombre;
+  //   this.genero = genero;
+
+  //   //Metodos
+  //   this.sonar = function () {
+  //     console.log("Hago sonidos porque estoy vivo");
+  //   }
+  //   this.saludar = function () {
+  //     console.log(`Hola, me llamo ${this.nombre}`)
+
+//Para escribirla como una clase:
+
+// Eliminamos function y lo sustituimos por class.
+// Eliminamos los atributos
+// Dentro de la clase, creamos el Constructor, que contiene los atributos. 
+// El Constructor es un método especial que se ejecuta en el momento de instanciar la clase
+
+//   class Animal{
+//     constructor(nombre, genero){
+//     this.nombre = nombre;
+//     this.genero = genero;
+// }
+// No es necesario declarar los Métodos con "this", solo hace falta el nombre y los paréntesis (y las instrucciones entre llaves)
+
+  //Metodos
+
+//     sonar(){
+//       console.log("Hago sonidos porque estoy vivo");
+//     }
+//     saludar(){
+//       console.log(`Hola, me llamo ${this.nombre}`);
+//     }
+//     ladrar(){
+//       console.log("Guauu guauuu!!!")
+//     }
+
+//   }
+// // Vamos a crear dos nuevos animales (mimi y scooby) y vemos que realmente estan soportados en prototipos. Las clases en Javascript solo sirven para facilitarnos la escritura del código
+
+// const mimi = new Animal("Mimi", "Hembra");
+
+// const scooby = new Animal("Scooby", "Macho");
+ 
+
+// console.log(mimi);
+//   console.log(scooby);
+
+//Class y Herencia
+// Vamos a crear un nuevo Animal que se llame Perro y que herede los Metodos de su clase padre que es Animal. Tendrá tres atributos, los dos de Animal y el nuevo atributo de tamanio.
+
+
+// class Perro extends Animal{
+//   constructor(nombre, genero, tamanio){
+//   super(nombre, genero);
+//   this.tamanio = tamanio; 
+//   this.raza = null; 
+//   }
+//   scooby = new Perro("Scooby", "Macho","Mediano");
+// super llama a los atributos de Animal y this.tamanio crea el nuevo atributo.
+
+  // Otros métodos
+  // - Un método estático se puede ejecutar sin necesidad de instanciar la clase.
+
+  // static queEres(){
+  //   console.log("Los perros somos animales mamiferos que pertenecemos a la familia de los caninos. Somo considerados los mejores amigos del hombre");
+
+  // }  
+
+
+// // Los setters y los getters son métodos especiales que nos permiten establecer y obtener los valores de atributos de nuestra clase
+
+// get getRaza(){
+//   return this.raza;
+// }
+
+// set setRaza(raza){
+//   this.raza = raza;
+// }
+// }
+// // }
+//  console.log(scooby.getRaza);
+//  scooby.setRaza = "Gran Danés";
+//  console.log(scooby.getRaza);
+// scooby.ladrar();
+
+
+///////////////////////////////////////////
+/// OBJETOS Y FUNCIONES DEL LENGUAJE  /////
+///////////////////////////////////////////
+
+//////////////////////////////////////////
+///////// OBJETO CONSOLE.Video 26////////
+////////////////////////////////////////
+// console.log(console);
+//  console { debug: ƒ, error: ƒ, info: ƒ, log: ƒ, warn: ƒ, … }
+//   assert: ƒ assert()
+//   clear: ƒ clear()
+//   context: ƒ context()
+//   count: ƒ count()
+//   countReset: ƒ countReset()
+//   debug: ƒ debug()
+//   dir: ƒ dir()
+//   dirxml: ƒ dirxml()
+//   error: ƒ error()
+//   group: ƒ group()
+//   groupCollapsed: ƒ groupCollapsed()
+//   groupEnd: ƒ groupEnd()
+//   info: ƒ info()
+//   log: ƒ log()
+//   memory: MemoryInfo { totalJSHeapSize: 10000000, usedJSHeapSize: 10000000, jsHeapSizeLimit: 2190000000 }
+//   profile: ƒ profile()
+//   profileEnd: ƒ profileEnd()
+//   table: ƒ table()
+//   time: ƒ time()
+//   timeEnd: ƒ timeEnd()
+//   timeLog: ƒ timeLog()
+//   timeStamp: ƒ timeStamp()
+//   trace: ƒ trace()
+//   warn: ƒ warn()
+//   Symbol(Symbol.toStringTag): "Object"
+//   [[Prototype]]: Object
+
+// Esto lista todas las funciones dei objeto console
+
+
+// let nombre= "Angel",
+// apellido= "Garcia",
+// edad= 67;
+//  console.log(nombre);
+//  console.log(apellido);
+//  console.log(edad);
+
+//  console.log(nombre, apellido, edad);
+
+//  console.log(`Hola, mi nombre es ${nombre} ${apellido} y mi edad ${edad}`);
+
+ //Se pueden usar comodines
+
+//  console.log(`Hola, mi nombre es %s %s y mi edad %d años.`, nombre, apellido, edad);
+
+ //Para limpiar la consola
+// console.clear();
+
+//window es el objeto global de los navegadores, que representa la ventana del navegador
+//  console.log(window);
+
+//  Document es la representación de html en Javascript, así que esta instrucción nos imprime toda la estructura html de la página
+// console.log(document);
+
+
+// Nos muestra todos los objetos, propiedades, atributos, etc. que tiene el objeto
+// console.dir(document);
+// console.dir(window);
+
+// El método console.group() crea un nuevo grupo en línea en el registro de la consola web, lo que hace que cualquier mensaje posterior de la consola tenga una sangría de un nivel adicional, hasta que se llame a console.groupEnd().
+
+
+// console.group("Cursos de @jonmircha en TouTube");
+// console.log("Curso de Javascript");
+// console.log("Curso de Node.js");
+// console.log("Curso de PWAs");
+// console.log("Curso de FlexBox");
+// console.log("Curso de Diseño y Programación Web");
+// console.groupEnd();
+
+// console.table nos presenta las propiedades de un objeto en forma de tabla. Si le añadimos la propiedad sort() podemos ordenarla alfabeticamente.
+// Tambien podemos presentar en forma de tabla array y otros objetos con  esta funcion
+
+// console.table(Object.entries(console).sort());
+
+// console.time sirve para medir cuanto tiempo tarda en ejecutarse un código
+
+// console.time('Cuanto tiempo tarde mi código');
+// const arreglo = Array(1000000);
+// for (let i=0; i<arreglo.length;i++){
+//   arreglo[i] = i;
+// }
+//   console.timeEnd('Cuanto tiempo tarde mi código');
+
+
+  // console.count cuenta las veces que se ejecuta un código
+
+  // for(let i=0; i<=100;i++){
+  //   console.count("codigo for");
+  //   console.log(i);
+  // }
+
+  // console.clear();
+
+  // console.assert sirve para realizar pruebas con el código. Si la aserción es true no se ejecuta, si es false, da el mensaje.Veamos un ejemplo
+// let x=3,
+// y=2,
+// pruebaXY=("Se espera que X siempre sea menor que Y");
+
+// console.assert(x<y,{x,y,pruebaXY});
+
+
+///////////////////////////////////////////
+///////// OBJECT DATE. Video 27 //////////
+/////////////////////////////////////////
+
+// console.log(Date());
+
+// let fecha = new Date();
+// console.log(fecha);
+
+// //dia del mes
+//   console.log(fecha.getDate());
+//   //Dia de la semana [D,L,M,M,J,V,S][00,1,2,3,4,5,6]
+//   console.log(fecha.getDay());
+//   //Mes [E,F,M,A,M,J,J,A,S,O,N,D][0,1,2,3,4,5,6,7,8,9,10,11]
+//   console.log(fecha.getMonth());
+//   //año,hora, minuto, segundos,milisegundos
+//   console.log(fecha.getFullYear());
+//   console.log(fecha.getHours());
+//   console.log(fecha.getMinutes());
+//   console.log(fecha.getSeconds());
+//   console.log(fecha.getMilliseconds());
+//   //Fecha
+//   console.log(fecha.toString());
+
+//   //Fecha y dia de la semana, fecha y hora, fecha, hora
+//   console.log(fecha.toDateString());
+//   console.log(fecha.toLocaleString());
+//   console.log(fecha.toLocaleDateString());
+//   console.log(fecha.toLocaleTimeString());
+//   //Diferencia con horario de Greenvich 
+//   console.log(fecha.getTimezoneOffset());
+//   //UTC fecha, hora
+//   console.log(fecha.getUTCDate());
+//   console.log(fecha.getUTCHours());
+//   //Segundos que pasaron desde el 1-01-1970
+//   console.log(Date.now());
+
+
+
+
+////////////////////////////////////////
+/////// OBJECT MATH. Video 28  ////////
+////////////////////////////////////// 
+
+// console.log(Math);
+//   E: 2.718281828459045
+//   LN2: 0.6931471805599453
+//   LN10: 2.302585092994046
+//   LOG2E: 1.4426950408889634
+//   LOG10E: 0.4342944819032518
+//   PI: 3.141592653589793
+//   SQRT1_2: 0.7071067811865476
+//   SQRT2: 1.4142135623730951
+//  //Devuelve el número absoluto 
+//   abs: ƒ abs()
+
+//   acos: ƒ acos()
+//   acosh: ƒ acosh()
+//   asin: ƒ asin()
+//   asinh: ƒ asinh()
+//   atan: ƒ atan()
+//   atan2: ƒ atan2()
+//   atanh: ƒ atanh()
+//   cbrt: ƒ cbrt()
+//   //Devuelve el numero entero superior
+//   ceil: ƒ ceil()
+//   clz32: ƒ clz32()
+//   cos: ƒ cos()
+//   cosh: ƒ cosh()
+//   exp: ƒ exp()
+//   expm1: ƒ expm1()
+//   //Devuelve el numero entero inferior
+//   floor: ƒ floor()
+//   fround: ƒ fround()
+//   hypot: ƒ hypot()
+//   imul: ƒ imul()
+//   log: ƒ log()
+//   log1p: ƒ log1p()
+//   log2: ƒ log2()
+//   log10: ƒ log10()
+//   max: ƒ max()
+//   min: ƒ min()
+//   //Devuelve la potencia del numero y exponente indicados
+//   pow: ƒ pow()
+//   //Devuelve un valor aleatorio comprendido entre 0 y 1
+//   random: ƒ random()
+//   //devuelve el numero entero más cercano
+//   round: ƒ round()
+//   //Indica si el numero es negativo, cero o positivo (-1, 0, 1)
+//   sign: ƒ sign()
+//   sin: ƒ sin()
+//   sinh: ƒ sinh()
+//   //Devuelve la raiz cuadrada del numero
+//   sqrt: ƒ sqrt()
+//   tan: ƒ tan()
+//   tanh: ƒ tanh()
+//   trunc: ƒ trunc()
+//   //Devuelve un numero aleatorio entero (en este caso comprendido entre 0 y 100)
+//   (Math.round(Math.random() * 100));
+
+///////////////////////////////////////////////////////////
+//////// OPERADOR DE CORTOCIRCUITO. Video 29///////////////
+//////////////////////////////////////////////////////////
+
+//Cortocircuito OR- Cuando el valor de la izquierda en la expresión siempre pueda validar a true, es el valor que se cargará por defecto
+
+//Cortocircuito ANDA - Cuando el valor de la izquierda en la expresión siempre pueda validar a false, es el valor que se cargará por defecto
+
+//  console.log("cadena"||"Valor de la derecha");//devuelve cadena
+//  console.log(19||"Valor de la derecha");//Devuelve 19
+//  console.log("true"||"Valor de la derecha");//Devuelve true
+//  console.log(0||"Valor de la derecha");//Devuelve valor de la derecha
+//  console.log(false||"Valor de la derecha");//Devuelve valor de la derecha
+//  console.log(false||"Valor de la derecha");//Devuelve valor de la derecha
+//  console.log(false&&"Valor de la derecha");//Devuelve false
+//  console.log(null&&"Valor de la derecha");//Devuelve null
+//  console.log(-2&&"Valor de la derecha");//Devuelve Valor de la derecha
+//  console.log(""&&"Valor de la derecha");//Devuelve ""
+//   console.log([]&&"Valor de la derecha");//Devuelve Valor de la derecha
+
+// Si se cambia el operador OR por el operador AND, cambia  los resultados (y viceversa)
+
+///////////////////////////////////////////////////////////
+//////////// ALERT, CONFIRM Y PROMPT. Video 30 ///////////
+/////////////////////////////////////////////////////////
+
+// console.log(window);
+
+// ejecutando este console.log del objeto global window se pueden ver los métodos que acoge . De estos hay tres que se van a estudiar ahora:
+
+//una alerta es un aviso y noes necesario guardar el resultado
+// alert("Hola, esto es una alerta");
+//Guarda aceptar como true y cancelar como false
+// confirm("Hola, esto es una confirmación");
+//Si le pones algo al prompt y pulsas aceptar la variable se guarda con ese valor escrito por el usuario. Si pulsas cancelar la variable se guarda como null
+// prompt("Hola, esto es un aviso y permite al usuario ingresar un valor");
+
+/////////////////////////////////////////////////////////
+////////// EXPRESIONES REGULARES. Video 31 /////////////
+///////////////////////////////////////////////////////
+
+// Son una secuencia de carácteres que forman un patrón de búsqueda, principalmente utilizada para la búsqueda de patrones de cadenas de carácteres
+// Más información en: 
+// https://es.wikipedia.org/wiki/Expresi%C3%B3n_regular
+// https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions
+
+// Pongamos que tenemos una cadena de carácteres:
+
+let cadena = "Lorem ipsum dolor sit amet consectetur do lorem que earum voluptate"
+
+//Podemos buscar una cadena de texto de dos maneras distintas.
+// 1) Mediante el Constructor
+
+//let expReg = new RegExp("Lorem", "ig");
+//Nos pide el nombre de la expresión a buscar y la bandera(ver enlace de arriba)
+
+//Esta devuelve true o false, según exista o no el texto solicitado
+//console.log(expReg.test(cadena));
+
+//Muestra en consola los valores encontrados
+//console.log(expReg.exec(cadena));
+
+// 2) En este método, escribimos la expresión entre barras. Las banderas se escriben a continuación de la última barra
+
+let expReg2 = /lorem/ig;
+
+  console.log(expReg2.test(cadena));
+
+  console.log(expReg2.exec(cadena));
+
+//Como en el método 1, test devuelve true o false y exec devuelve un array con las expresiones encontradas
+//(leer los enlaces de arriba sobre Expresiones Regulares)
+
+
+/////////////////////////////////////////////////////
+/// FUNCIONES ANONIMAS AUTOEJECUTABLES. Video 32 ///
+///////////////////////////////////////////////////
+//Funcion Anonima Autoejecutable
+(function(){
+
+})//Se encapsula entre paréntesis
+();
+
+
+//Ejemplo
+
+  (function (d,w,c) {
+    console.log("d es  document")
+    console.log("w es window")
+c.log("Este es un console.log")
+  })(document, window, console);
+
+//Formas de escribir Funciones Anónimas Autoejecutables
+//Clásica
+  (function () {
+console.log("Versión clásica")
+  })();
+
+//La Crockford (Javascript The God Parts)
+  ((function () {
+console.log("Versión Crockford")
+  })());
+  
+//Unaria
+  +function () {
+    console.log("Versión Unaria")
+  }();
+
+//Facebook
+  !function () {
+    console.log("Versión Facebook")
+  }();  
+
+////////////////////////////////////////////////////
+//// MODULOS IMPORT/EXPORT. Video 33 //////////////
+//////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
+ 
